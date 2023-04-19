@@ -1,11 +1,8 @@
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
-// import {visionTool} from '@sanity/vision'
-// import {schemaTypes} from './schemas'
+import schemas from "./sanity/schemas";
 
 const configSanity = defineConfig({
-  // name: "default",
-  name: "default",
   title: "My Next Sanity Studio",
 
   projectId: "gu1fy4xs",
@@ -14,14 +11,11 @@ const configSanity = defineConfig({
   apiVersion: "2023-04-18",
   basePath: "/admin",
 
-  plugins: [
-    deskTool(),
-    // visionTool()
-  ],
+  plugins: [deskTool()],
 
-  // schema: {
-  //   types: schemaTypes,
-  // },
+  schema: {
+    types: schemas,
+  },
 });
 
 export default configSanity;
