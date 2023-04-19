@@ -7,9 +7,10 @@ export default async function Home() {
   const projects=await getProjects();
 
   return (
-    <div className="max-w-5xl mx-auto p-2">
+    <div className="">
       <h1 className="text-5xl md:text-7xl font-extrabold">
-        Hello <br></br>I&apos;m <br></br>
+        {/* Hello <br></br> */}
+        I&apos;m <br></br>
         <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
           Muhammad Burhan
         </span>
